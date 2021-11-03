@@ -481,27 +481,27 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-.about .content h3 {
+.researchScope .content h3 {
   font-weight: 700;
   font-size: 28px;
   font-family: "Poppins", sans-serif;
 }
-.about .content ul {
+.researchScope .content ul {
   list-style: none;
   padding: 0;
 }
-.about .content ul li {
+.researchScope .content ul li {
   padding: 0 0 8px 26px;
   position: relative;
 }
-.about .content ul i {
+.researchScope .content ul i {
   position: absolute;
   font-size: 20px;
   left: 0;
   top: -3px;
   color: #ffc451;
 }
-.about .content p:last-child {
+.researchScope .content p:last-child {
   margin-bottom: 0;
 }
 
@@ -569,14 +569,14 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
-.services .icon-box {
+.researchMilestone .icon-box {
   text-align: center;
   border: 1px solid #ebebeb;
   padding: 80px 20px;
   transition: all ease-in-out 0.3s;
   background: #fff;
 }
-.services .icon-box .icon {
+.researchMilestone .icon-box .icon {
   margin: 0 auto;
   width: 64px;
   height: 64px;
@@ -588,33 +588,135 @@ section {
   margin-bottom: 20px;
   transition: 0.3s;
 }
-.services .icon-box .icon i {
+.researchMilestone .icon-box .icon i {
   color: #151515;
   font-size: 28px;
   transition: ease-in-out 0.3s;
 }
-.services .icon-box h4 {
+.researchMilestone .icon-box h4 {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 24px;
 }
-.services .icon-box h4 a {
+.researchMilestone .icon-box h4 a {
   color: #151515;
   transition: ease-in-out 0.3s;
 }
-.services .icon-box h4 a:hover {
+.researchMilestone .icon-box h4 a:hover {
   color: #ffc451;
 }
-.services .icon-box p {
+.researchMilestone .icon-box p {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
 }
-.services .icon-box:hover {
+.researchMilestone .icon-box:hover {
   border-color: #fff;
   box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
   transform: translateY(-10px);
 }
+
+
+/*--------------------------------------------------------------
+# Documents
+--------------------------------------------------------------*/
+.documents .icon-box {
+  text-align: center;
+  border: 1px solid #ebebeb;
+  padding: 80px 20px;
+  transition: all ease-in-out 0.3s;
+  background: #fff;
+}
+.documents .icon-box .icon {
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
+  background: #ffc451;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+.documents .icon-box .icon i {
+  color: #151515;
+  font-size: 28px;
+  transition: ease-in-out 0.3s;
+}
+.documents .icon-box h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+.documents .icon-box h4 a {
+  color: #151515;
+  transition: ease-in-out 0.3s;
+}
+.documents .icon-box h4 a:hover {
+  color: #ffc451;
+}
+.documents .icon-box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.documents .icon-box:hover {
+  border-color: #fff;
+  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+  transform: translateY(-10px);
+}
+
+/*--------------------------------------------------------------
+# Presentation
+--------------------------------------------------------------*/
+.presentation .icon-box {
+  text-align: center;
+  border: 1px solid #ebebeb;
+  padding: 80px 20px;
+  transition: all ease-in-out 0.3s;
+  background: #fff;
+}
+.presentation .icon-box .icon {
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
+  background: #ffc451;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+.presentation .icon-box .icon i {
+  color: #151515;
+  font-size: 28px;
+  transition: ease-in-out 0.3s;
+}
+.presentation .icon-box h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+.presentation .icon-box h4 a {
+  color: #151515;
+  transition: ease-in-out 0.3s;
+}
+.presentation .icon-box h4 a:hover {
+  color: #ffc451;
+}
+.presentation .icon-box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.presentation .icon-box:hover {
+  border-color: #fff;
+  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+  transform: translateY(-10px);
+}
+
 
 /*--------------------------------------------------------------
 # Cta
