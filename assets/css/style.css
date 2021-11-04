@@ -1447,7 +1447,6 @@ section {
   font-size: 13px;
   color: #fff;
 }
-<style>
 .timeline {
   list-style: none;
   padding: 20px 0 20px;
@@ -1595,4 +1594,3 @@ section {
 .timeline-body>p+p {
   margin-top: 5px;
 }
-</style>
