@@ -14,7 +14,9 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -34,6 +36,156 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
+  <style>
+    .timeline {
+      list-style: none;
+      padding: 20px 0 20px;
+      position: relative;
+    }
+
+    .timeline:before {
+      top: 0;
+      bottom: 0;
+      position: absolute;
+      content: " ";
+      width: 3px;
+      background-color: #eeeeee;
+      left: 50%;
+      margin-left: -1.5px;
+    }
+
+    .timeline>li {
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    .timeline>li:before,
+    .timeline>li:after {
+      content: " ";
+      display: table;
+    }
+
+    .timeline>li:after {
+      clear: both;
+    }
+
+    .timeline>li:before,
+    .timeline>li:after {
+      content: " ";
+      display: table;
+    }
+
+    .timeline>li:after {
+      clear: both;
+    }
+
+    .timeline>li>.timeline-panel {
+      width: 46%;
+      float: left;
+      border: 1px solid #d4d4d4;
+      border-radius: 2px;
+      padding: 20px;
+      position: relative;
+      -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+      box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+    }
+
+    .timeline>li>.timeline-panel:before {
+      position: absolute;
+      top: 26px;
+      right: -15px;
+      display: inline-block;
+      border-top: 15px solid transparent;
+      border-left: 15px solid #ccc;
+      border-right: 0 solid #ccc;
+      border-bottom: 15px solid transparent;
+      content: " ";
+    }
+
+    .timeline>li>.timeline-panel:after {
+      position: absolute;
+      top: 27px;
+      right: -14px;
+      display: inline-block;
+      border-top: 14px solid transparent;
+      border-left: 14px solid #fff;
+      border-right: 0 solid #fff;
+      border-bottom: 14px solid transparent;
+      content: " ";
+    }
+
+    .timeline>li>.timeline-badge {
+      color: #fff;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      font-size: 1.4em;
+      text-align: center;
+      position: absolute;
+      top: 16px;
+      left: 50%;
+      margin-left: -25px;
+      background-color: #999999;
+      z-index: 100;
+      border-top-right-radius: 50%;
+      border-top-left-radius: 50%;
+      border-bottom-right-radius: 50%;
+      border-bottom-left-radius: 50%;
+    }
+
+    .timeline>li.timeline-inverted>.timeline-panel {
+      float: right;
+    }
+
+    .timeline>li.timeline-inverted>.timeline-panel:before {
+      border-left-width: 0;
+      border-right-width: 15px;
+      left: -15px;
+      right: auto;
+    }
+
+    .timeline>li.timeline-inverted>.timeline-panel:after {
+      border-left-width: 0;
+      border-right-width: 14px;
+      left: -14px;
+      right: auto;
+    }
+
+    .timeline-badge.primary {
+      background-color: #2e6da4 !important;
+    }
+
+    .timeline-badge.success {
+      background-color: #3f903f !important;
+    }
+
+    .timeline-badge.warning {
+      background-color: #f0ad4e !important;
+    }
+
+    .timeline-badge.danger {
+      background-color: #d9534f !important;
+    }
+
+    .timeline-badge.info {
+      background-color: #5bc0de !important;
+    }
+
+    .timeline-title {
+      margin-top: 0;
+      color: inherit;
+    }
+
+    .timeline-body>p,
+    .timeline-body>ul {
+      margin-bottom: 0;
+    }
+
+    .timeline-body>p+p {
+      margin-top: 5px;
+    }
+  </style>
 </head>
 
 <body>
@@ -48,12 +200,12 @@
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-            <li><a class="nav-link scrollto" href="index.html">Home</a></li>
-            <li><a class="nav-link scrollto" href="research_scope.html">Research Project Scope</a></li>
-            <li><a class="nav-link scrollto " href="milestone.html">Research Project Milestone</a></li>
-            <li><a class="nav-link scrollto" href="documents.html">Documents</a></li>
-            <li><a class="nav-link scrollto" href="presentations.html">Presentations</a></li>
-            <li><a class="nav-link scrollto" href="about_us.html">About Us</a></li>
+          <li><a class="nav-link scrollto" href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="research_scope.html">Research Project Scope</a></li>
+          <li><a class="nav-link scrollto " href="milestone.html">Research Project Milestone</a></li>
+          <li><a class="nav-link scrollto" href="documents.html">Documents</a></li>
+          <li><a class="nav-link scrollto" href="presentations.html">Presentations</a></li>
+          <li><a class="nav-link scrollto" href="about_us.html">About Us</a></li>
 
           <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -97,34 +249,157 @@
 
   <main id="main">
 
-    <!-- ======= Research Scope Section ======= -->
-    <section id="researchScope" class="researchScope">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row">
-          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
-            <img src="assets/img/about.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
-            <h3>Research Project Scope</h3>
-            <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-            <ul>
-              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-            </ul>
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
-            </p>
-          </div>
-        </div>
-
+    <div class="container mt-3">
+      <div class="page-header">
+        <h1 id="timeline">Project Timeline</h1>
       </div>
-    </section><!-- End About Section -->
+      <ul class="timeline">
+        <li>
+          <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Project topic Assessment</h4>
+              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 14-Dec-2020</small></p>
+            </div>
+            <div class="timeline-body">
+              <p></p>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge warning"><i class="glyphicon glyphicon-credit-card"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Project Charter- Submission</h4>
+              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 12-Feb-2021</small></p>
+            </div>
+            <div class="timeline-body">
+              <p>This is a document that defines what needs to be fulfill and decide how the project is going to be proceed. Mainly provide solution to the problem, Identify the main stockholders of the project and outline the constraints & objectives faced.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge danger"><i class="glyphicon glyphicon-credit-card"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Project - Proposal Report</h4>
+              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 06-Mar-2021</small></p>
+            </div>
+            <div class="timeline-body">
+              <p>Mainly includes Introduction, Objectives, Methodology, Description of Personal & Facilities, Testing Mechanism and Evaluation of final Product.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge danger"><i class="glyphicon glyphicon-credit-card"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Project - Proposal Presentation</h4>
+              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 10-Mar-2021</small></p>
+            </div>
+            <div class="timeline-body">
+              <p>This was the first presentation made to a panel. This is where the research project was initially pitched. The presentation gave an overall outlook of the project, along with the proposed final solution.</p>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge info"><i class="glyphicon glyphicon-floppy-disk"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Project - Status Document 1</h4>
+              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 20-Apr-2021</small></p>
+            </div>
+            <div class="timeline-body">
+              <p>Overall status of the project untill Progress Presentation One, including commit history, task planner, and Scheduled meetings</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge primary"><i class="glyphicon glyphicon-credit-card"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Progress Presentation – I (50%)</h4>
+              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 04-May-2021</small></p>
+            </div>
+            <div class="timeline-body">
+              <p>At least, 50% of the project should be completed in this review and need to describe the current status and future plans.</p>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge"><i class="glyphicon glyphicon-credit-card"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Research Paper - Submission for ICAC</h4>
+              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 10-Nov-2021</small></p>
+            </div>
+            <div class="timeline-body">
+              <p>This document presents our evaluation or interpretation or argument. We build upon what we know about subject and make a attempt to find out what experts know.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge info"><i class="glyphicon glyphicon-credit-card"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Project Final Report</h4>
+              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 8-Oct-2021</small></p>
+            </div>
+            <div class="timeline-body">
+              <p>Finalized document of overall project.</p>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge success"><i class="glyphicon glyphicon-credit-card"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Progress Presentation – II (90%)</h4>
+              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 15-Oct-2021</small></p>
+            </div>
+            <div class="timeline-body">
+              <p>90% of the project should be completed in this review.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge warning"><i class="glyphicon glyphicon-credit-card"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Project Status Doc II</h4>
+              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 24-Nov-2021</small></p>
+            </div>
+            <div class="timeline-body">
+              <p>Finalized Status Document of the project</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge warning"><i class="glyphicon glyphicon-credit-card"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Log Book</h4>
+              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 24-Nov-2021</small></p>
+            </div>
+            <div class="timeline-body">
+              <p>Overall log book of the project contains the logs for entire period.</p>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge primary"><i class="glyphicon glyphicon-credit-card"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Progress Presentation & VIVA</h4>
+              <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 26-Nov-2021</small></p>
+            </div>
+            <div class="timeline-body">
+              <p>Final assesment of project with the finalized product presentation following with VIVA.</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
 
   </main><!-- End #main -->
 
@@ -132,21 +407,22 @@
   <footer id="footer">
 
     <div class="container">
-        <div class="copyright">
-            &copy; Copyright <strong><span>PayAsYouPark</span></strong>. All Rights Reserved
-        </div>
-        <div class="credits">
-            <!-- All the links in the footer should remain intact. -->
-            <!-- You can delete the links only if you purchased the pro version. -->
-            <!-- Licensing information: https://bootstrapmade.com/license/ -->
-            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/ -->
-            Designed by PayAsYouPark Team
-        </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>PayAsYouPark</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/ -->
+        Designed by PayAsYouPark Team
+      </div>
     </div>
-</footer><!-- End Footer -->
+  </footer><!-- End Footer -->
 
   <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>
